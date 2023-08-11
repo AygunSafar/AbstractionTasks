@@ -1,6 +1,8 @@
 import shapeHierarchy.Circle;
 import shapeHierarchy.Rectangle;
 import shapeHierarchy.Shape;
+import vehicle.Airplane;
+import vehicle.Car;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +16,18 @@ public class Main {
         shape2.calculateArea();
         shape2.calculatePerimeter();
 
+        //Test code for vehicle
 
+        Car car= new Car();
+        car.accelerate(100);
+        car.brake();
+        car.start();
+        car.stop();
+
+        Airplane airplane= new Airplane();
+        airplane.fly();
+        airplane.takeOff();
+        airplane.land();
 
 
     }
